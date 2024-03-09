@@ -25,7 +25,7 @@ public class CreateUserValidator : AbstractValidator<CreateUserCommand>
             .Equal(true).WithMessage("Zaakceptowanie przetwarzania danych jest wymagane!");
 
         RuleFor(x => x.Role)
-            .NotEmpty().WithMessage("Wybierz opcję rejestracji!")
+            .NotEmpty().WithMessage("Wybierz opcję rejestracji!") 
             .IsInEnum().WithMessage("Niepoprawna rola!");
     }
 }

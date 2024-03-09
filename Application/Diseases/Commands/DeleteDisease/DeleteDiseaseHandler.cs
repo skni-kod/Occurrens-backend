@@ -15,7 +15,7 @@ public class DeleteDiseaseHandler : IRequestHandler<DeleteDiseaseCommand, ErrorO
     public DeleteDiseaseHandler(IGetUserId getUserId, IDiseaseRepository diseaseRepository)
     {
         _getUserIdl = getUserId;
-        _diseaseRepository = diseaseRepository;
+        _diseaseRepository = diseaseRepository; 
     }
     
     public async Task<ErrorOr<DiseaseResponse>> Handle(DeleteDiseaseCommand request, CancellationToken cancellationToken)
@@ -26,7 +26,7 @@ public class DeleteDiseaseHandler : IRequestHandler<DeleteDiseaseCommand, ErrorO
 
         var response = await _diseaseRepository.DeleteDisease((Guid)doctorId, request.DiseaseId, cancellationToken);
 
-        if (!response) return Errors.DiseaseErrors.WrongDisease;
+        if (!response) return Errors.DiseaseErrors.WrongDisease; 
 
         return new DiseaseResponse("Usunięto!");
     }

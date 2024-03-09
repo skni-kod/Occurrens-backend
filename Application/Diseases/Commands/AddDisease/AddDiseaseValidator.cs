@@ -16,6 +16,6 @@ public class AddDiseaseValidator : AbstractValidator<AddDiseaseCommand>
             .NotEmpty().NotNull().WithMessage("Musisz dodać opis choroby");
 
         RuleFor(x => x.Medicines)
-            .NotEmpty().NotNull().WithMessage("Musisz podać sposób leczenia");
+            .NotEmpty().NotNull().WithMessage("Musisz podać sposób leczenia"); 
     }
 }

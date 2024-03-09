@@ -10,10 +10,10 @@ public class GetUserId : IGetUserId
 
     public GetUserId(IHttpContextAccessor httpContextAccessor)
     {
-        _httpContextAccessor = httpContextAccessor;
+        _httpContextAccessor = httpContextAccessor; 
     }
 
-    public ClaimsPrincipal User => _httpContextAccessor.HttpContext?.User;
+    public ClaimsPrincipal User => _httpContextAccessor.HttpContext?.User; 
     
-    public Guid? UserId => User is null ? null : (Guid?)Guid.Parse(User.FindFirst(x => x.Type == ClaimTypes.NameIdentifier).Value);
+    public Guid? UserId => User is null ? null : (Guid?)Guid.Parse(User.FindFirst(x => x.Type == ClaimTypes.NameIdentifier).Value); 
 }

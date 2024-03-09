@@ -7,6 +7,6 @@ namespace Application.WorkAccount.Commands.SignInUser;
 
 public record SignInUserCommand(
     string Login,
-    string Password,
+    string Password, 
     UserRoles Who
     ) : IRequest<ErrorOr<AccountResponse>>;

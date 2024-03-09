@@ -12,14 +12,14 @@ public class ResetPasswordHandler : IRequestHandler<ResetPasswordCommand, ErrorO
 
     public ResetPasswordHandler(IAccountRepository accountRepository)
     {
-        _accountRepository = accountRepository;
+        _accountRepository = accountRepository; 
     }
     
     public async Task<ErrorOr<AccountResponse>> Handle(ResetPasswordCommand request, CancellationToken cancellationToken)
     {
         bool result = await _accountRepository.ResetPassword(request.Token, request.NewPassword, request.Role, cancellationToken);
 
-        if (result == false) return Errors.UserErrors.SomethinkWentWrong;
+        if (result == false) return Errors.UserErrors.SomethinkWentWrong; 
 
         return new AccountResponse("Pomyślnie zmieniono hasło!");
     }

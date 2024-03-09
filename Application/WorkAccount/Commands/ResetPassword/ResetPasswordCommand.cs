@@ -10,4 +10,4 @@ public record ResetPasswordCommand(
     string NewPassword,
     string ConfirmPassword,
     UserRoles Role
-    ) : IRequest<ErrorOr<AccountResponse>>;
+    ) : IRequest<ErrorOr<AccountResponse>>; 

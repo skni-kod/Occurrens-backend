@@ -8,5 +8,5 @@ public class AddressDto
     public int Apartament_number { get; set; }
     public string Postal_code { get; set; }
     public string City { get; set; }
-    public Guid DoctorId { get; set; }
+    public Guid DoctorId { get; set; } 
 }

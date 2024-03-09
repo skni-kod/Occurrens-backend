@@ -14,7 +14,7 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, ErrorOr<Acco
     private readonly IAccountRepository _accountRepository;
     
     public CreateUserHandler(IAccountRepository accountRepository)
-    {
+    { 
         _accountRepository = accountRepository;
     }   
     
@@ -24,7 +24,7 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, ErrorOr<Acco
 
         if (isEmailExist)
         {
-            return Errors.UserErrors.DuplicateEmail;
+            return Errors.UserErrors.DuplicateEmail; 
         }
 
         var user = CreateUserFromRequest(request);
@@ -51,7 +51,7 @@ public class CreateUserHandler : IRequestHandler<CreateUserCommand, ErrorOr<Acco
                 Name = request.Name,
                 Secont_name = request.SecontName,
                 Last_name = request.LastName,
-                Telephon_number = request.TelNumber,
+                Telephon_number = request.TelNumber, 
                 Email = request.Email,
                 Password = request.Password,
                 Date_of_birth = request.BirthDate,

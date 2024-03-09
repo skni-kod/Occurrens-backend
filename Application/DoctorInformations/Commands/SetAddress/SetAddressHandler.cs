@@ -16,7 +16,7 @@ public class SetAddressHandler : IRequestHandler<SetAddressCommand, ErrorOr<Doct
     public SetAddressHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
     
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(SetAddressCommand request, CancellationToken cancellationToken)
@@ -28,7 +28,7 @@ public class SetAddressHandler : IRequestHandler<SetAddressCommand, ErrorOr<Doct
         var address = new Address
         {
             DoctorId = userId,
-            Street = request.Street,
+            Street = request.Street, 
             Building_number = request.BuildingNumber,
             Apartament_number = request.ApartamentNumber,
             Postal_code = request.PostalCode,

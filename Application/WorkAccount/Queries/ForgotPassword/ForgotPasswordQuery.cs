@@ -8,4 +8,4 @@ namespace Application.WorkAccount.Queries.ForgotPassword;
 public record ForgotPasswordQuery(
     string Email,
     UserRoles Role
-    ) : IRequest<ErrorOr<AccountResponse>>;
+    ) : IRequest<ErrorOr<AccountResponse>>; 

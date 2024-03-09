@@ -15,7 +15,7 @@ public static class Extensions
             Building_number = address.Building_number,
             Apartament_number = (int)address.Apartament_number,
             Postal_code = address.Postal_code,
-            City = address.City,
+            City = address.City, 
         };
     }
 
@@ -28,7 +28,7 @@ public static class Extensions
             Tuesday = isOpened.Tuesday,
             Wednesday = isOpened.Wednesday,
             Thursday = isOpened.Thursday,
-            Fridady = isOpened.Fridady,
+            Fridady = isOpened.Fridady, 
             Saturday = isOpened.Saturday,
             Sunday = isOpened.Sunday
         };
@@ -36,7 +36,7 @@ public static class Extensions
 
     private static GetOfficeInfoDto OfficeInfoAsDto(this Address address)
     {
-        var openedInfo = new List<GetOpenedOfficeInfoDto>();
+        var openedInfo = new List<GetOpenedOfficeInfoDto>(); 
 
         foreach (var opened in address.is_opened)
         {
@@ -46,7 +46,7 @@ public static class Extensions
         return new GetOfficeInfoDto
         {
             Id = address.Id,
-            Street = address.Street,
+            Street = address.Street, 
             Building_number = address.Building_number,
             Apartament_number = address.Apartament_number,
             Postal_code = address.Postal_code,
@@ -58,7 +58,7 @@ public static class Extensions
     public static GetSelfInfoDto SelfInfoAsDto(this Doctor doctor)
     {
         var officesList = new List<GetOfficeInfoDto>();
-        var specializationList = new List<string>();
+        var specializationList = new List<string>(); 
 
         foreach (var offices in doctor.addresses)
         {

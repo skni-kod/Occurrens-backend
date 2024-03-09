@@ -12,7 +12,7 @@ public class SignInUserHandler : IRequestHandler<SignInUserCommand, ErrorOr<Acco
 
     public SignInUserHandler(IAccountRepository accountRepository)
     {
-        _accountRepository = accountRepository;
+        _accountRepository = accountRepository; 
     }
         
     public async Task<ErrorOr<AccountResponse>> Handle(SignInUserCommand request, CancellationToken cancellationToken)
@@ -21,7 +21,7 @@ public class SignInUserHandler : IRequestHandler<SignInUserCommand, ErrorOr<Acco
 
         if (user is null) return Errors.UserErrors.NullEmailOrPasswork;
 
-        if (user.VerifiedAt == null) return Errors.UserErrors.AccountNotVerified;
+        if (user.VerifiedAt == null) return Errors.UserErrors.AccountNotVerified; 
 
         var token = await _accountRepository.GenerateJwt(user);
 

@@ -19,6 +19,7 @@ public class AccountController : ApiController
     public AccountController(IMediator mediator)
     {
         _mediator = mediator;
+        
     }
 
     /// <summary>
@@ -34,6 +35,7 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
             );
+        
     }
     
     /// <summary>
@@ -56,6 +58,7 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
             );
+        
     }
     
     /// <summary>
@@ -75,6 +78,7 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
         );
+        
     }
     
     /// <summary>
@@ -91,6 +95,7 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
         );
+        
     }
 
     /// <summary>
@@ -112,6 +117,7 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -131,5 +137,6 @@ public class AccountController : ApiController
             accountResponse => Ok(accountResponse),
             errors => Problem(errors)
         );
+        
     }
 }

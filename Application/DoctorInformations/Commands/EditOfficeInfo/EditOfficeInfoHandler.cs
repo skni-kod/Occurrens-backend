@@ -16,7 +16,7 @@ public class EditOfficeInfoHandler : IRequestHandler<EditOfficeInfoCommand, Erro
     public EditOfficeInfoHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
 
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(EditOfficeInfoCommand request, CancellationToken cancellationToken)
@@ -33,7 +33,7 @@ public class EditOfficeInfoHandler : IRequestHandler<EditOfficeInfoCommand, Erro
             PostalCode = request.PostalCode,
             City = request.City,
             Monday = request.Monday,
-            Tuesday = request.Tuesday,
+            Tuesday = request.Tuesday, 
             Wednesday = request.Wednesday,
             Thursday = request.Thursday,
             Fridady = request.Fridady,

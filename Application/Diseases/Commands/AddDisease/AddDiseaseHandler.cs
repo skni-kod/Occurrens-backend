@@ -16,7 +16,7 @@ public class AddDiseaseHandler : IRequestHandler<AddDiseaseCommand, ErrorOr<Dise
     public AddDiseaseHandler(IGetUserId getUserId, IDiseaseRepository diseaseRepository)
     {
         _getUserId = getUserId;
-        _diseaseRepository = diseaseRepository;
+        _diseaseRepository = diseaseRepository; 
     }
 
     public async Task<ErrorOr<DiseaseResponse>> Handle(AddDiseaseCommand request, CancellationToken cancellationToken)
@@ -31,7 +31,7 @@ public class AddDiseaseHandler : IRequestHandler<AddDiseaseCommand, ErrorOr<Dise
             PatientId = request.PatientId,
             Name = request.Name,
             Description = request.Description,
-            Medicines = request.Medicines
+            Medicines = request.Medicines 
         };
 
         var result = await _diseaseRepository.AddDisease((Guid)doctorId, newDisease, cancellationToken);

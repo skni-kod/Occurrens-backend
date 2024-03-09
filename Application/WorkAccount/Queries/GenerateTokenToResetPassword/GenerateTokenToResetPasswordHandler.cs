@@ -12,7 +12,7 @@ public class GenerateTokenToResetPasswordHandler : IRequestHandler<GenerateToken
 
     public GenerateTokenToResetPasswordHandler(IAccountRepository accountRepository)
     {
-        _accountRepository = accountRepository;
+        _accountRepository = accountRepository; 
     }
     
     public async Task<ErrorOr<AccountResponse>> Handle(GenerateTokenToResetPasswordCommand request, CancellationToken cancellationToken)
@@ -21,6 +21,6 @@ public class GenerateTokenToResetPasswordHandler : IRequestHandler<GenerateToken
 
         if (result == null) return Errors.UserErrors.SomethinkWentWrong;
 
-        return new AccountResponse(result);
+        return new AccountResponse(result); 
     }
 }

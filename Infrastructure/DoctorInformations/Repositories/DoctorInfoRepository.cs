@@ -13,18 +13,18 @@ public class DoctorInfoRepository : IDoctorInfoRepository
 
     public DoctorInfoRepository(OccurrensDbContext context)
     {
-        _context = context;
+        _context = context; 
     }
     
     public async Task SetSpecialization(Specialization specialization, CancellationToken cancellationToken)
     {
         await _context.AddAsync(specialization, cancellationToken);
-        await _context.SaveChangesAsync();
+        await _context.SaveChangesAsync(); 
     }
 
     public async Task SetAddress(Address address, CancellationToken cancellationToken)
     {
-        await _context.Addresses.AddAsync(address, cancellationToken);
+        await _context.Addresses.AddAsync(address, cancellationToken); 
         await _context.SaveChangesAsync();
     }
 
@@ -34,7 +34,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
         
         if (address is null)
         {
-            return null;
+            return null; 
         }
 
         return address.AddressAsDto();
@@ -42,20 +42,20 @@ public class DoctorInfoRepository : IDoctorInfoRepository
 
     public async Task<bool> IsOpenedDataExists(Guid id, CancellationToken cancellationToken)
     {
-        return await _context.IsOpeneds.AnyAsync(x => x.AddressId == id, cancellationToken);
+        return await _context.IsOpeneds.AnyAsync(x => x.AddressId == id, cancellationToken); 
     }
 
     public async Task CreateOpenedInfo(Is_opened isOpened, CancellationToken cancellationToken)
     {
         await _context.IsOpeneds.AddAsync(isOpened, cancellationToken);
-        await _context.SaveChangesAsync(cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken); 
     }
 
     public async Task<bool> UpdateSpecialization(Guid userId, Guid specializationId,string newSpecialization ,CancellationToken cancellationToken)
     {
         var result = await _context.Specializations.FindAsync(specializationId, cancellationToken);
 
-        if (result != null && result.DoctorId == userId)
+        if (result != null && result.DoctorId == userId) 
         {
             result.Specjalization = newSpecialization;
             
@@ -71,7 +71,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
     {
         var address = await _context.Addresses
             .FirstOrDefaultAsync(address => address.Id == officeId && address.DoctorId == userId, cancellationToken);
-
+ 
         if (address == null) return false;
 
         address.Street = dto.Street ?? address.Street;
@@ -88,7 +88,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
             openedData.Monday = dto.Monday ?? openedData.Monday;
             openedData.Tuesday = dto.Tuesday ?? openedData.Tuesday;
             openedData.Wednesday = dto.Wednesday ?? openedData.Wednesday;
-            openedData.Thursday = dto.Thursday ?? openedData.Thursday;
+            openedData.Thursday = dto.Thursday ?? openedData.Thursday; 
             openedData.Fridady = dto.Fridady ?? openedData.Fridady;
             openedData.Saturday = dto.Saturday ?? openedData.Saturday;
             openedData.Sunday = dto.Sunday ?? openedData.Sunday;
@@ -106,7 +106,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
         if (result == null || result.DoctorId != doctorId) return false;
 
         _context.Specializations.Remove(result);
-        await _context.SaveChangesAsync(cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken); 
 
         return true;
     }
@@ -115,7 +115,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
     {
         var office = await _context.Addresses.FindAsync(id, cancellationToken);
 
-        if (office == null || office.DoctorId != userId) return false;
+        if (office == null || office.DoctorId != userId) return false; 
 
         _context.Remove(office);
 
@@ -132,7 +132,7 @@ public class DoctorInfoRepository : IDoctorInfoRepository
     {
         var doctor = await _context.Doctors
             .Include(x => x.spetializations)
-            .Include(x => x.addresses)
+            .Include(x => x.addresses) 
             .ThenInclude(x => x.is_opened)
             .SingleOrDefaultAsync(x => x.Id == userId, cancellationToken);
         

@@ -1,11 +1,13 @@
 ﻿using System.Text;
 using Core.Account.Repositories;
+using Core.Appointment.Repositories;
 using Core.DataFromClaims.UserId;
 using Core.Date;
 using Core.Diseases.Repositories;
 using Core.DoctorInformations.Repositories;
 using Domain.AuthenticationSettings;
 using Infrastructure.Account.Repositories;
+using Infrastructure.Appointment.Repositories;
 using Infrastructure.DataFromClaims.UserId;
 using Infrastructure.Date;
 using Infrastructure.Diseases.Repositories;
@@ -34,8 +36,9 @@ public static class DependencyInjection
         services.AddScoped<IDoctorInfoRepository, DoctorInfoRepository>();
         services.AddScoped<IGetUserId, GetUserId>();
         services.AddScoped<IDiseaseRepository, DiseaseRepository>();
+        services.AddScoped<IAppointmentRepository, AppointmentRepository>();
         
-        services.AddHttpContextAccessor();
+        services.AddHttpContextAccessor(); 
         
         return services;
     }
@@ -47,7 +50,7 @@ public static class DependencyInjection
         services.AddSingleton(authenticationSettings);
 
         services.AddAuthentication(options =>
-        {
+        { 
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;

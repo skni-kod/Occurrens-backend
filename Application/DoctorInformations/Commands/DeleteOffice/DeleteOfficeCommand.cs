@@ -6,4 +6,4 @@ namespace Application.DoctorInformations.Commands.DeleteOffice;
 
 public record DeleteOfficeCommand(
     Guid Id
-    ) : IRequest<ErrorOr<DoctorInfoResponse>>;
+    ) : IRequest<ErrorOr<DoctorInfoResponse>>; 

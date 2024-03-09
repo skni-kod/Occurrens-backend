@@ -14,6 +14,6 @@ public class SignInUserValidator : AbstractValidator<SignInUserCommand>
 
         RuleFor(x => x.Who)
             .NotEmpty().WithMessage("Nie wybrano roli!")
-            .IsInEnum().WithMessage("Niepoprawna opcja logowania!!");
+            .IsInEnum().WithMessage("Niepoprawna opcja logowania!!"); 
     }
 }

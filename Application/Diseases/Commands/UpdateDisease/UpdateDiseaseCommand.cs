@@ -9,4 +9,4 @@ public record UpdateDiseaseCommand(
     string? Name,
     string? Description,
     string? Medicines
-    ) : IRequest<ErrorOr<DiseaseResponse>>;
+    ) : IRequest<ErrorOr<DiseaseResponse>>; 

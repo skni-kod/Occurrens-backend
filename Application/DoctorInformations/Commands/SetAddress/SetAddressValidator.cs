@@ -17,6 +17,6 @@ public class SetAddressValidator : AbstractValidator<SetAddressCommand>
             .Matches(@"^\d{2}-\d{3}$").WithMessage("Niepoprawny format kodu pocztowego. Wprowadź kod w formacie XX-XXX.");
 
         RuleFor(x => x.City)
-            .NotNull().NotEmpty().WithMessage("Pole miasta jest wymagane!");
+            .NotNull().NotEmpty().WithMessage("Pole miasta jest wymagane!"); 
     }
 }

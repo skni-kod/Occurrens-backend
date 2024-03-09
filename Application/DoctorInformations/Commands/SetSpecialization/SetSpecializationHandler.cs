@@ -16,13 +16,13 @@ public class SetSpecializationHandler : IRequestHandler<SetSpecializationCommand
     public SetSpecializationHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
     
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(SetSpecializationCommand request, CancellationToken cancellationToken)
     {
         var userId = _getUserId.UserId;
-        
+         
         if (userId is null) return Errors.DoctorInfoErrors.NotLogged;
 
         var specialization = new Specialization

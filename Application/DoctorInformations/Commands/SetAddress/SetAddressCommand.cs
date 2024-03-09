@@ -9,5 +9,5 @@ public record SetAddressCommand(
     int BuildingNumber,
     int? ApartamentNumber,
     string PostalCode,
-    string City
+    string City 
     ) : IRequest<ErrorOr<DoctorInfoResponse>>;

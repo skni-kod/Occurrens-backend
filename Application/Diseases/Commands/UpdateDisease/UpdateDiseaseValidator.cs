@@ -8,5 +8,5 @@ public class UpdateDiseaseValidator : AbstractValidator<UpdateDiseaseCommand>
     {
         RuleFor(x => x.DiseaseId)
             .NotEmpty().NotEmpty().WithMessage("Wybierz co chcesz edytować");
-    }
+    } 
 }

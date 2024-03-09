@@ -6,5 +6,5 @@ namespace Application.DoctorInformations.Commands.EditSpecialization;
 
 public record EditSpecializationCommand(
     Guid Id,
-    string NewSpecialization
+    string NewSpecialization 
     ) : IRequest<ErrorOr<DoctorInfoResponse>>;

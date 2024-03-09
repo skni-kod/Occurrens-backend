@@ -1,3 +1,3 @@
 namespace Application.Contracts.DoctorInformationsAnswers;
 
-public record DoctorInfoResponse(string message);
+public record DoctorInfoResponse( string message );

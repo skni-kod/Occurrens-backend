@@ -11,7 +11,7 @@ public static class Extensions
         {
             Id = diseases.Id,
             Name = diseases.Name,
-            Description = diseases.Description,
+            Description = diseases.Description, 
             Medicines = diseases.Medicines,
             Date = diseases.Date
         };

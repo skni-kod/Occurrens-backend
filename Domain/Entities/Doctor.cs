@@ -11,7 +11,7 @@
         public string Email { get; set; }
         public string Password { get; set; }
         public DateOnly Date_of_birth { get; set; }
-        public string Role { get; set; } = "Doctor";
+        public string Role { get; set; } = "Doctor"; 
         public bool Acception { get; set; }
         public string? VerificationToken { get; set; }
         public DateTime? VerifiedAt { get; set; }

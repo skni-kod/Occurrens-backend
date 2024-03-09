@@ -8,7 +8,6 @@ public static partial class  Errors
     {
         public static Error PermissionDenied => Error.Conflict(
             code: "Permision denied",
-            description: "Wybrana specjalizacja nie istnieje"
-            );
+            description: "Wybrana specjalizacja nie istnieje");
     }
 }

@@ -15,7 +15,7 @@ public class DeleteSpecializationHandler : IRequestHandler<DeleteSpecializationC
     public DeleteSpecializationHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
 
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(DeleteSpecializationCommand request, CancellationToken cancellationToken)
@@ -26,7 +26,7 @@ public class DeleteSpecializationHandler : IRequestHandler<DeleteSpecializationC
 
         var result = await _doctorInfoRepository.DaleteSpecialization(request.Id, (Guid)doctorId, cancellationToken);
 
-        if (!result) return Errors.DoctorInfoErrors.WrongSpecializationId;
+        if (!result) return Errors.DoctorInfoErrors.WrongSpecializationId; 
 
         return new DoctorInfoResponse("Pomyślnie usunięto specjalizację!");
     }

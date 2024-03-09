@@ -8,5 +8,5 @@ public class GetOfficeInfoDto
     public int? Apartament_number { get; set; }
     public string Postal_code { get; set; }
     public string City { get; set; }
-    public List<GetOpenedOfficeInfoDto> Opened { get; set; }
+    public List<GetOpenedOfficeInfoDto> Opened { get; set; } 
 }
