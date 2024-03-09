@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "Application\Application.csproj", "{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "Infrastructure\Infrastructure.csproj", "{C3847E8B-B25B-47AC-BDC4-EF68E687B143}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Api", "Api\Api.csproj", "{CB64141B-193B-4B57-9A25-3C709B33E133}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Presentation", "Presentation\Presentation.csproj", "{F9FFB435-3B2D-4533-89E0-6A8893E2909D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Domain", "Domain\Domain.csproj", "{8F119529-AC53-4565-963A-A6A49448FE69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Core", "Core\Core.csproj", "{39B5791E-6135-401E-B0A2-F737E90067DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{4FB0C726-C02D-49F1-BD9A-9BBEE457419E}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+		Dockerfile = Dockerfile
+		.dockerignore = .dockerignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3847E8B-B25B-47AC-BDC4-EF68E687B143}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3847E8B-B25B-47AC-BDC4-EF68E687B143}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3847E8B-B25B-47AC-BDC4-EF68E687B143}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3847E8B-B25B-47AC-BDC4-EF68E687B143}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB64141B-193B-4B57-9A25-3C709B33E133}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB64141B-193B-4B57-9A25-3C709B33E133}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB64141B-193B-4B57-9A25-3C709B33E133}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB64141B-193B-4B57-9A25-3C709B33E133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9FFB435-3B2D-4533-89E0-6A8893E2909D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9FFB435-3B2D-4533-89E0-6A8893E2909D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9FFB435-3B2D-4533-89E0-6A8893E2909D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9FFB435-3B2D-4533-89E0-6A8893E2909D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F119529-AC53-4565-963A-A6A49448FE69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F119529-AC53-4565-963A-A6A49448FE69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F119529-AC53-4565-963A-A6A49448FE69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F119529-AC53-4565-963A-A6A49448FE69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{39B5791E-6135-401E-B0A2-F737E90067DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{39B5791E-6135-401E-B0A2-F737E90067DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{39B5791E-6135-401E-B0A2-F737E90067DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{39B5791E-6135-401E-B0A2-F737E90067DD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{97A41C6D-CCEA-4449-B4A2-D6CFF9D2A672} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+		{C3847E8B-B25B-47AC-BDC4-EF68E687B143} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+		{CB64141B-193B-4B57-9A25-3C709B33E133} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+		{F9FFB435-3B2D-4533-89E0-6A8893E2909D} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+		{8F119529-AC53-4565-963A-A6A49448FE69} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+		{39B5791E-6135-401E-B0A2-F737E90067DD} = {56C1A68C-6CE2-43DC-BF1C-EFA4AC5FB1DA}
+	EndGlobalSection
+EndGlobal

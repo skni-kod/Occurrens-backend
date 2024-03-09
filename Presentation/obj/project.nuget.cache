@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "8eHAKDjYWKi20zUPjgy/NB1ZGjpjQPows8LV+yg0030Znaxx1gYXMabXOnys/wNJAYx1J1I7pZH/aQVIWnz0iw==",
+  "success": true,
+  "projectFilePath": "D:\\Projekt-Occurrens\\Presentation\\Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
