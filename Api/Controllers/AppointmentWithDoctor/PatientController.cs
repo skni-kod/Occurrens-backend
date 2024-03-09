@@ -22,6 +22,7 @@ public class PatientController : ApiController
     /// </summary>
     /// <param name="command"></param>
     /// <returns></returns>
+    [HttpPost]
     public async Task<IActionResult> MakeAppointmentWithDoctor([FromBody] AppointmentToDoctorCommand command)
     {
         var response = await _mediator.Send(command);
