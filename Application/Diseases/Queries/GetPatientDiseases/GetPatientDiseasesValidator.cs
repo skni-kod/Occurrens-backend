@@ -1,6 +1,6 @@
 using FluentValidation;
 
-namespace Application.Diseases.Queries;
+namespace Application.Diseases.Queries.GetPatientDiseases;
 
 public class GetPatientDiseasesValidator : AbstractValidator<GetPatientDiseasesQuery>
 {

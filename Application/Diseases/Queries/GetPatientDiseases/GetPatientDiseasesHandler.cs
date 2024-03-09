@@ -4,7 +4,7 @@ using Core.Diseases.Repositories;
 using ErrorOr;
 using MediatR;
 
-namespace Application.Diseases.Queries;
+namespace Application.Diseases.Queries.GetPatientDiseases;
 
 public class GetPatientDiseasesHandler : IRequestHandler<GetPatientDiseasesQuery, ErrorOr<GetPatientDiseasesResponse>>
 {

@@ -1,7 +1,7 @@
 using Application.Diseases.Commands.AddDisease;
 using Application.Diseases.Commands.DeleteDisease;
 using Application.Diseases.Commands.UpdateDisease;
-using Application.Diseases.Queries;
+using Application.Diseases.Queries.GetPatientDiseases;
 using Core.Account.enums;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
