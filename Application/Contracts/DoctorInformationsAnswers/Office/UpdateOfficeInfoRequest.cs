@@ -12,5 +12,4 @@ public record UpdateOfficeInfoRequest(
     string? Thursday,
     string? Fridady,
     string? Saturday,
-    string? Sunday
-    );
+    string? Sunday);

@@ -11,7 +11,7 @@
         public string Saturday { get; set; } = "Zamknięte";
         public string Sunday { get; set; } = "Zamknięte";
 
-
+ 
         public Guid? AddressId { get; set; }
         public Address Address { get; set; }
     }

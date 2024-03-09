@@ -14,6 +14,7 @@ public class ValidationBehavior<TRequest, TResponse> :
     public ValidationBehavior(IValidator<TRequest>? validator = null)
     {
         _validator = validator;
+        
     }
 
     public async Task<TResponse> Handle(
@@ -21,10 +22,8 @@ public class ValidationBehavior<TRequest, TResponse> :
         RequestHandlerDelegate<TResponse> next,
         CancellationToken cancellationToken)
     {
-        if (_validator is null)
-        {
-            return await next();
-        }
+        if (_validator is null) return await next();
+        
 
         var validation = await _validator.ValidateAsync(request, cancellationToken);
 

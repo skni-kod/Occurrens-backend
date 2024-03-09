@@ -8,5 +8,4 @@ public record AddDiseaseCommand(
     Guid PatientId,
     string Name,
     string Description,
-    string Medicines
-    ) : IRequest<ErrorOr<DiseaseResponse>>;
+    string Medicines) : IRequest<ErrorOr<DiseaseResponse>>;

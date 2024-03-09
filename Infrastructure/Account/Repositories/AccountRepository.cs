@@ -26,13 +26,13 @@ public class AccountRepository : IAccountRepository
     {
         _context = context;
         _authenticationSettings = authenticationSettings;
-        _dateService = dateService;
+        _dateService = dateService; 
         _emailService = emailService;
     }
     
     public async Task<bool> IsEmailExist(string email, UserRoles role, CancellationToken cancellationToken)
     {
-        if (role == UserRoles.Doctor)
+        if (role == UserRoles.Doctor) 
         {
             var isExist = await _context.Doctors.AnyAsync(x => x.Email == email, cancellationToken);
             return isExist;
@@ -49,7 +49,7 @@ public class AccountRepository : IAccountRepository
     public async Task<AccountDto> UserData(string email,string password, UserRoles role, CancellationToken cancellationToken)
     {
         if (role == UserRoles.Doctor)
-        {
+        { 
             var doctor =  await _context.Doctors.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
 
             if (doctor is null) return null;
@@ -76,7 +76,7 @@ public class AccountRepository : IAccountRepository
         return null;
     }
 
-    public async Task<string> GenerateJwt(AccountDto data)
+    public async Task<string> GenerateJwt(AccountDto data) 
     {
         var claims = new List<Claim>()
         {
@@ -97,7 +97,7 @@ public class AccountRepository : IAccountRepository
             signingCredentials: cred
             );
 
-        var tokenHandler = new JwtSecurityTokenHandler();
+        var tokenHandler = new JwtSecurityTokenHandler(); 
          
 
         return await Task.Run(() => tokenHandler.WriteToken(token));
@@ -106,7 +106,7 @@ public class AccountRepository : IAccountRepository
     public async Task<bool> ConfirmAccount(string token, UserRoles role, Guid id, CancellationToken cancellationToken)
     {
         if (role == UserRoles.Doctor)
-        {
+        { 
             var doctor = await _context.Doctors.FindAsync(id);
             if (doctor is null || doctor.VerificationToken != token) return false;
 
@@ -133,7 +133,7 @@ public class AccountRepository : IAccountRepository
         doctor.Password = hashPassword;
         
         await _context.Doctors.AddAsync(doctor, cancellationToken);
-        await _context.SaveChangesAsync(cancellationToken);
+        await _context.SaveChangesAsync(cancellationToken); 
 
         
         var emailData = new EmailDto
@@ -152,7 +152,7 @@ public class AccountRepository : IAccountRepository
 
         patient.Password = hashPassword;
 
-        await _context.Patients.AddAsync(patient, cancellationToken);
+        await _context.Patients.AddAsync(patient, cancellationToken); 
         await _context.SaveChangesAsync(cancellationToken);
         
         var emailData = new EmailDto
@@ -165,11 +165,11 @@ public class AccountRepository : IAccountRepository
         await _emailService.SendEmail(emailData);
     }
     
-    public string CreateRandomToken() => Convert.ToHexString(RandomNumberGenerator.GetBytes(256));
+    public string CreateRandomToken() => Convert.ToHexString(RandomNumberGenerator.GetBytes(256)); 
     
     public async Task<bool> ForgotPasswordEmail(string email, UserRoles role, CancellationToken cancellationToken)
     {
-        if (role == UserRoles.Doctor)
+        if (role == UserRoles.Doctor) 
         {
             var doctor = await _context.Doctors.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
 
@@ -205,7 +205,7 @@ public class AccountRepository : IAccountRepository
 
     public async Task<string> GenerateTokenToResterPassword(Guid id, string role, CancellationToken cancellationToken)
     {
-        if (role == "Doctor")
+        if (role == "Doctor") 
         {
             var doctor = await _context.Doctors.FindAsync(id, cancellationToken);
 
@@ -237,7 +237,7 @@ public class AccountRepository : IAccountRepository
 
     public async Task<bool> ResetPassword(string token, string password, UserRoles role, CancellationToken cancellationToken)
     {
-        if (role == UserRoles.Doctor)
+        if (role == UserRoles.Doctor) 
         {
             var doctor = await _context.Doctors.FirstOrDefaultAsync(x => x.PasswordResetToken == token, cancellationToken);
 

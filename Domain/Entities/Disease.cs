@@ -9,7 +9,7 @@
         public string Medicines { get; set; }
         public DateOnly Date { get; set; } = DateOnly.FromDateTime(DateTime.Now);
 
-
+ 
         public Guid? PatientId { get; set; }
         public Patient Patient { get; set; }
     }

@@ -6,4 +6,4 @@ namespace Application.DoctorInformations.Commands.DeleteSpecialization;
 
 public record DeleteSpecializationCommand(
     Guid Id
-    ) : IRequest<ErrorOr<DoctorInfoResponse>>;
+    ) : IRequest<ErrorOr<DoctorInfoResponse>>; 

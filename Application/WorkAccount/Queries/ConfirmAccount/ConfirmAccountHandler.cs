@@ -12,7 +12,7 @@ public class ConfirmAccountHandler : IRequestHandler<ConfirmAccountQuery, ErrorO
 
     public ConfirmAccountHandler(IAccountRepository accountRepository)
     {
-        _accountRepository = accountRepository;
+        _accountRepository = accountRepository; 
     }
     
     public async Task<ErrorOr<AccountResponse>> Handle(ConfirmAccountQuery request, CancellationToken cancellationToken)
@@ -21,7 +21,7 @@ public class ConfirmAccountHandler : IRequestHandler<ConfirmAccountQuery, ErrorO
 
         if (response == false)
         {
-            return Errors.UserErrors.SomethinkWentWrong;
+            return Errors.UserErrors.SomethinkWentWrong; 
         }
 
         return new AccountResponse("Pomyślnie zweryfikowano konto!");

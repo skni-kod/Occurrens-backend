@@ -9,4 +9,4 @@ public record ConfirmAccountQuery(
     string Token,
     UserRoles Role,
     Guid Id
-    ) : IRequest<ErrorOr<AccountResponse>>;
+    ) : IRequest<ErrorOr<AccountResponse>>; 

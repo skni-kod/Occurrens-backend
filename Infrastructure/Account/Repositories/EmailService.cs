@@ -22,6 +22,6 @@ public class EmailService : IEmailService
         await smtp.ConnectAsync("smtp.wp.pl", 465, SecureSocketOptions.StartTls);
         await smtp.AuthenticateAsync("occurrens@wp.pl", "8!HP?S6fW)nuZj2");
         await smtp.SendAsync(email);
-        await smtp.DisconnectAsync(true);
-    }
+        await smtp.DisconnectAsync(true); 
+    } 
 }

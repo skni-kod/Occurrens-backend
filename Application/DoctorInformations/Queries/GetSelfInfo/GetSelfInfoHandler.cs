@@ -22,7 +22,7 @@ public class GetSelfInfoHandler : IRequestHandler<GetSelfInfoQuery, ErrorOr<GetS
     {
         var userId = _getUserId.UserId.Value;
 
-        if (userId == null) return Errors.DoctorInfoErrors.NotLogged;
+        if (userId == null) return Errors.DoctorInfoErrors.NotLogged; 
         
         var response = await _doctorInfoRepository.GetSelfInfo((Guid)userId, cancellationToken);
 

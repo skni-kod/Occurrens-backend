@@ -7,6 +7,6 @@ public class GetPatientDiseasesValidator : AbstractValidator<GetPatientDiseasesQ
     public GetPatientDiseasesValidator()
     {
         RuleFor(x => x.PatientId)
-            .NotEmpty().NotNull().WithMessage("Nie wybrano pacjenta!");
+            .NotEmpty().NotNull().WithMessage("Nie wybrano pacjenta!"); 
     }
 }

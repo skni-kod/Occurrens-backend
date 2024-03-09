@@ -9,10 +9,8 @@ public class ApiController : ControllerBase
 {
     protected IActionResult Problem(List<Error> errors)
     {
-        if (errors.Count is 0)
-        {
-            return Problem();
-        }
+        if (errors.Count is 0) return Problem();
+        
         
         if (errors.All(error => error.Type == ErrorType.Validation))
         {
@@ -32,7 +30,8 @@ public class ApiController : ControllerBase
             ErrorType.Validation => StatusCodes.Status400BadRequest,
             _ => StatusCodes.Status500InternalServerError
         };
-
+        
+        
         return Problem(statusCode: statusCode, title: error.Description);
     }
 
@@ -43,7 +42,8 @@ public class ApiController : ControllerBase
         {
             modelStateDictionary.AddModelError(error.Code, error.Description);
         }
-
+        
+        
         return ValidationProblem(modelStateDictionary);
     }
 }

@@ -6,4 +6,4 @@ namespace Application.DoctorInformations.Commands.SetSpecialization;
 
 public record SetSpecializationCommand(
     string Specialization
-    ) : IRequest<ErrorOr<DoctorInfoResponse>>;
+    ) : IRequest<ErrorOr<DoctorInfoResponse>>; 

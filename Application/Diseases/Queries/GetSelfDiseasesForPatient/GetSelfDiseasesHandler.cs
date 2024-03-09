@@ -15,7 +15,7 @@ public class GetSelfDiseasesHandler : IRequestHandler<GetSelfDiseasesQuery, Erro
     public GetSelfDiseasesHandler(IGetUserId getUserId, IDiseaseRepository diseaseRepository)
     {
         _getUserId = getUserId;
-        _diseaseRepository = diseaseRepository;
+        _diseaseRepository = diseaseRepository; 
     }
     
     public async Task<ErrorOr<GetPatientDiseasesResponse>> Handle(GetSelfDiseasesQuery request, CancellationToken cancellationToken)
@@ -24,7 +24,7 @@ public class GetSelfDiseasesHandler : IRequestHandler<GetSelfDiseasesQuery, Erro
 
         var result = await _diseaseRepository.GetPatientDiseases((Guid)userId, cancellationToken);
 
-        if (result == null) return Errors.DiseaseErrors.NothingToDisplay;
+        if (result == null) return Errors.DiseaseErrors.NothingToDisplay; 
 
         return new GetPatientDiseasesResponse(result);
     }

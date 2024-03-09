@@ -9,7 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers.Disease;
 
-[Route("diseases")]
+[Route("disease")]
 [Authorize(Roles = nameof(UserRoles.Doctor))]
 public class DiseasesController : ApiController
 {

@@ -2,5 +2,5 @@ namespace Core.Date;
 
 public interface IDateService
 {
-    DateTime CurrentDateTime();
+    DateTime CurrentDateTime(); 
 }

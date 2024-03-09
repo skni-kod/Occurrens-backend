@@ -11,6 +11,6 @@ public class ForgotPasswordValidator : AbstractValidator<ForgotPasswordQuery>
 
         RuleFor(x => x.Role)
             .NotEmpty().WithMessage("Wybierz czy jesteś lekarzem, czy pacjentem")
-            .IsInEnum().WithMessage("Wybierz pacjelnta lub doktora!");
+            .IsInEnum().WithMessage("Wybierz pacjelnta lub doktora!"); 
     }
 }

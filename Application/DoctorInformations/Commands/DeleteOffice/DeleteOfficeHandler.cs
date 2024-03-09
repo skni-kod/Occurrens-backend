@@ -15,14 +15,14 @@ public class DeleteOfficeHandler : IRequestHandler<DeleteOfficeCommand, ErrorOr<
     public DeleteOfficeHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
 
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(DeleteOfficeCommand request, CancellationToken cancellationToken)
     {
         var userId = _getUserId.UserId;
 
-        if (userId == null) return Errors.DoctorInfoErrors.NotLogged;
+        if (userId == null) return Errors.DoctorInfoErrors.NotLogged; 
 
         var result = await _doctorInfoRepository.DeteleOfiice(request.Id, (Guid)userId, cancellationToken);
 

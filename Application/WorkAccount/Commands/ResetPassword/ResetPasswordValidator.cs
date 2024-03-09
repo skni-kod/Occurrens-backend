@@ -15,6 +15,6 @@ public class ResetPasswordValidator : AbstractValidator<ResetPasswordCommand>
             .WithMessage("Hasła się różnią!");
 
         RuleFor(x => x.Role)
-            .IsInEnum().WithMessage("Niepoprawna rola!");
+            .IsInEnum().WithMessage("Niepoprawna rola!"); 
     }
 }

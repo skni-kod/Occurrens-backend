@@ -5,5 +5,5 @@ namespace Core.DataFromClaims.UserId;
 public interface IGetUserId
 {
     ClaimsPrincipal User { get; }
-    Guid? UserId { get; }
+    Guid? UserId { get; } 
 }

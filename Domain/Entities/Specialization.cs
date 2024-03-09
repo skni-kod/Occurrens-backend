@@ -6,6 +6,6 @@
         public string Specjalization { get; set; }
 
         public Doctor Doctor { get; set; }
-        public Guid? DoctorId { get; set; }
+        public Guid? DoctorId { get; set; } 
     }
 }

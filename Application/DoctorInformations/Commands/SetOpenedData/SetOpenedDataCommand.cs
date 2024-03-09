@@ -13,4 +13,4 @@ public record SetOpenedDataCommand(
     string? Saturday,
     string? Sunday,
     Guid AddressId
-    ) : IRequest<ErrorOr<DoctorInfoResponse>>;
+    ) : IRequest<ErrorOr<DoctorInfoResponse>>; 

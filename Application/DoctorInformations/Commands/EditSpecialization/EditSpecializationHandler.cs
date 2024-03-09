@@ -16,7 +16,7 @@ public class EditSpecializationHandler : IRequestHandler<EditSpecializationComma
     public EditSpecializationHandler(IGetUserId getUserId, IDoctorInfoRepository doctorInfoRepository)
     {
         _getUserId = getUserId;
-        _doctorInfoRepository = doctorInfoRepository;
+        _doctorInfoRepository = doctorInfoRepository; 
     }
 
     public async Task<ErrorOr<DoctorInfoResponse>> Handle(EditSpecializationCommand request, CancellationToken cancellationToken)
@@ -28,7 +28,7 @@ public class EditSpecializationHandler : IRequestHandler<EditSpecializationComma
         var specializationToUpdate = await _doctorInfoRepository.UpdateSpecialization((Guid)userId, request.Id, request.NewSpecialization, cancellationToken);
 
         if (!specializationToUpdate) return Errors.Permision.PermissionDenied;
-
+ 
         return new DoctorInfoResponse("Zaktualizowano!");
     }
 }

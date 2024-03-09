@@ -16,7 +16,7 @@ public class UpdateDiseaseHandler : IRequestHandler<UpdateDiseaseCommand, ErrorO
     public UpdateDiseaseHandler(IGetUserId getUserId, IDiseaseRepository diseaseRepository)
     {
         _getUserId = getUserId;
-        _diseaseRepository = diseaseRepository;
+        _diseaseRepository = diseaseRepository; 
     }
     
     public async Task<ErrorOr<DiseaseResponse>> Handle(UpdateDiseaseCommand request, CancellationToken cancellationToken)
@@ -28,7 +28,7 @@ public class UpdateDiseaseHandler : IRequestHandler<UpdateDiseaseCommand, ErrorO
         var toUpdate = new ToUpdateDiseaseDto
         {
             Name = request.Name,
-            Description = request.Description,
+            Description = request.Description, 
             Medicines = request.Medicines
         };
 

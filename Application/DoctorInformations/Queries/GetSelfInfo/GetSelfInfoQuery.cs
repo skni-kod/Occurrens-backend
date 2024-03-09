@@ -4,4 +4,4 @@ using MediatR;
 
 namespace Application.DoctorInformations.Queries.GetSelfInfo;
 
-public record GetSelfInfoQuery() : IRequest<ErrorOr<GetSelfInfoResponse>>;
+public record GetSelfInfoQuery() : IRequest<ErrorOr<GetSelfInfoResponse>>; 

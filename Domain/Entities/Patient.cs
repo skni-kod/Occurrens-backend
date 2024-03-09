@@ -9,7 +9,7 @@
         public string Last_name { get; set; }
         public int Telephon_number { get; set; }
         public string Email { get; set; }
-        public string Password { get; set; }
+        public string Password { get; set; } 
         public DateOnly Date_of_birth { get; set; }
         public string Role { get; set; } = "Patient";
         public bool Acception { get; set; }

@@ -6,4 +6,4 @@ namespace Application.Diseases.Commands.DeleteDisease;
 
 public record DeleteDiseaseCommand(
     Guid DiseaseId
-    ) : IRequest<ErrorOr<DiseaseResponse>>;
+    ) : IRequest<ErrorOr<DiseaseResponse>>; 

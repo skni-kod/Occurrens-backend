@@ -24,6 +24,7 @@ public class SelfDoctorInformationsController : ApiController
     public SelfDoctorInformationsController(IMediator mediator)
     {
         _mediator = mediator;
+        
     }
 
     /// <summary>
@@ -40,6 +41,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors) 
             );
+        
     }
 
     /// <summary>
@@ -56,6 +58,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -72,6 +75,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -91,6 +95,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -123,6 +128,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -155,6 +161,7 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
             );
+        
     }
 
     /// <summary>
@@ -170,5 +177,6 @@ public class SelfDoctorInformationsController : ApiController
             infoResponse => Ok(infoResponse),
             errors => Problem(errors)
         );
+        
     }
 }

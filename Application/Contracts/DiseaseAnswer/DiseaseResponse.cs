@@ -1,3 +1,3 @@
 namespace Application.Contracts.DiseaseAnswer;
 
-public record DiseaseResponse(string message);
+public record DiseaseResponse( string message );

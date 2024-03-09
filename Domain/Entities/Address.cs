@@ -13,7 +13,7 @@
 
         public Guid? DoctorId { get; set; }
         public Doctor Doctor { get; set; }
-        
+         
 
 
         public List<Is_opened> is_opened { get; set; }

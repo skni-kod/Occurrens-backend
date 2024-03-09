@@ -35,7 +35,7 @@ public static class DependencyInjection
         services.AddScoped<IGetUserId, GetUserId>();
         services.AddScoped<IDiseaseRepository, DiseaseRepository>();
         
-        services.AddHttpContextAccessor();
+        services.AddHttpContextAccessor(); 
         
         return services;
     }
@@ -47,7 +47,7 @@ public static class DependencyInjection
         services.AddSingleton(authenticationSettings);
 
         services.AddAuthentication(options =>
-        {
+        { 
             options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
             options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
