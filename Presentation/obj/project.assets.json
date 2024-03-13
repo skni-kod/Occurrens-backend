@@ -60,24 +60,26 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jcob\\.nuget\\packages\\": {}
+    "C:\\Users\\sebcw\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj",
       "projectName": "Presentation",
-      "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj",
-      "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\obj\\",
+      "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj",
+      "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -90,11 +92,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -120,15 +117,15 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
+            "version": "[7.0.14, 7.0.14]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[7.0.15, 7.0.15]"
+            "version": "[7.0.14, 7.0.14]"
           }
         ],
         "frameworkReferences": {
@@ -136,7 +133,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

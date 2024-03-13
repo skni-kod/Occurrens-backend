@@ -1,42 +1,44 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Api\\Api.csproj": {}
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Api\\Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Api\\Api.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Api\\Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Api\\Api.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Api\\Api.csproj",
         "projectName": "Api",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Api\\Api.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Api\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Api\\Api.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\Infrastructure.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\Infrastructure.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj"
               }
             }
           }
@@ -45,11 +47,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -107,19 +104,19 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -130,37 +127,39 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -169,11 +168,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -217,15 +211,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -233,34 +227,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj",
         "projectName": "Core",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -269,11 +265,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -311,15 +302,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -327,26 +318,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -359,11 +352,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -383,15 +371,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -399,40 +387,42 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Application\\Application.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Application\\Application.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Core\\Core.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Core\\Core.csproj"
               },
-              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Domain\\Domain.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj"
               }
             }
           }
@@ -441,11 +431,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -501,15 +486,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -517,26 +502,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj",
         "projectName": "Presentation",
-        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj",
-        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Presentation\\obj\\",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -549,11 +536,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -579,15 +561,15 @@
           "downloadDependencies": [
             {
               "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.NETCore.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             },
             {
               "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[7.0.15, 7.0.15]"
+              "version": "[7.0.14, 7.0.14]"
             }
           ],
           "frameworkReferences": {
@@ -595,7 +577,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
