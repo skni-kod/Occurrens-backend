@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "UjMzwgXs+GsnPtleuBIuqs1t5jlMVsK4GttTnk68uA/6vOY4eIZCmuVXvP//ccoX8itEFECHs1T7YNm45sblww==",
+  "dgSpecHash": "t0HYSfdquRuEt98+Xjg3dIcmOiQloBq2i/WwArLY35wxaBsdq59ECQczxIUmO1tbIpuLoyyPr9SG87s36T909A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Presentation\\Presentation.csproj",
+  "projectFilePath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Presentation\\Presentation.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
   ],
   "logs": []
 }

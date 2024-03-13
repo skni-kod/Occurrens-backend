@@ -19,8 +19,8 @@ public class EmailService : IEmailService
         
         using var smtp = new SmtpClient();
         
-        await smtp.ConnectAsync("smtp-relay.brevo.com ", 587, SecureSocketOptions.StartTls);
-        await smtp.AuthenticateAsync("projektoccurrens@gmail.com", "ER2DSjU1yBxLTMY6 ");
+        await smtp.ConnectAsync("smtp-relay.brevo.com", 587, SecureSocketOptions.StartTls);
+        await smtp.AuthenticateAsync("projektoccurrens@gmail.com","ER2DSjU1yBxLTMY6");
         await smtp.SendAsync(email);
         await smtp.DisconnectAsync(true); 
     } 

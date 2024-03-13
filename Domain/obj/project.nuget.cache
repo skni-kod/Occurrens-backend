@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "gCtQOZPVTKQr3zVIC95pMAIDE78chSSySFf80KTj16IfXREf3Be3uJ6m1O30EsWGgMxKMQVoZJOGUDOdLle2aw==",
+  "dgSpecHash": "aWG9IbOshSRxgyctvOniEYCoP6lnHeFlO7rqJKOKU+6gFBFrV4YlrscE/x/YnRPhm2x3B2NOzj3/51XaYoJwRQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.14\\microsoft.netcore.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.14\\microsoft.windowsdesktop.app.ref.7.0.14.nupkg.sha512",
-    "C:\\Users\\sebcw\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.14\\microsoft.aspnetcore.app.ref.7.0.14.nupkg.sha512"
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
+    "C:\\Users\\jakub\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512"
   ],
   "logs": []
 }
