@@ -6,6 +6,7 @@ using Core.Date;
 using Core.Diseases.Repositories;
 using Core.DoctorInformations.Repositories;
 using Domain.AuthenticationSettings;
+using Domain.EmailSettings;
 using Infrastructure.Account.Repositories;
 using Infrastructure.Appointment.Repositories;
 using Infrastructure.DataFromClaims.UserId;
@@ -32,6 +33,7 @@ public static class DependencyInjection
         
         services.AddScoped<IAccountRepository, AccountRepository>();
         services.AddScoped<IDateService, DateService>();
+        services.Configure<EmailSettings>(configuration.GetSection("EmailSettings"));
         services.AddScoped<IEmailService, EmailService>();
         services.AddScoped<IDoctorInfoRepository, DoctorInfoRepository>();
         services.AddScoped<IGetUserId, GetUserId>();
