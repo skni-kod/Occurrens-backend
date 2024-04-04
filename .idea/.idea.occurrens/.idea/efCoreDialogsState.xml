@@ -7,6 +7,7 @@
         <entry key="Common:c3847e8b-b25b-47ac-bdc4-ef68e687b143:dbContext" value="Infrastructure.Persistance.OccurrensDbContext" />
         <entry key="Common:enableDiagnosticLogging" value="false" />
         <entry key="Common:noBuild" value="false" />
+        <entry key="Common:outputFolder" value="Migrations" />
         <entry key="Common:useDefaultConnection" value="true" />
       </map>
     </option>

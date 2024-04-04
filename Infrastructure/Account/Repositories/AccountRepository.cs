@@ -140,7 +140,7 @@ public class AccountRepository : IAccountRepository
         {
             To = doctor.Email,
             Subject = "Weryfikacja konta OCCURRENS",
-            Body = $"<h1>Potwierdź swoje konto klikając <a href='https://localhost:7192/account/verificateAccount/{doctor.VerificationToken}/{doctor.Role}/{doctor.Id}'>tutaj</a>:</h1>"
+            Body = $"<h1>Potwierdź swoje konto klikając <a href='http://localhost:5000/account/verificateAccount/{doctor.VerificationToken}/{doctor.Role}/{doctor.Id}'>tutaj</a>:</h1>"
         };
         
         await _emailService.SendEmail(emailData);
@@ -159,7 +159,7 @@ public class AccountRepository : IAccountRepository
         {
             To = patient.Email,
             Subject = "Weryfikacja konta OCCURRENS",
-            Body = $"<h1>Potwierdź swoje konto klikając <a href='https://localhost:7192/account/verificateAccount/{patient.VerificationToken}/{patient.Role}/{patient.Id}'>tutaj</a></h1>"
+            Body = $"<h1>Potwierdź swoje konto klikając <a href='http://localhost:5000/account/verificateAccount/{patient.VerificationToken}/{patient.Role}/{patient.Id}'>tutaj</a></h1>"
         };
         
         await _emailService.SendEmail(emailData);

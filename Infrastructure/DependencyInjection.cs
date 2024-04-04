@@ -14,6 +14,7 @@ using Infrastructure.Date;
 using Infrastructure.Diseases.Repositories;
 using Infrastructure.DoctorInformations.Repositories;
 using Infrastructure.Persistance;
+using Infrastructure.Persistance.Seeder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -39,6 +40,7 @@ public static class DependencyInjection
         services.AddScoped<IGetUserId, GetUserId>();
         services.AddScoped<IDiseaseRepository, DiseaseRepository>();
         services.AddScoped<IAppointmentRepository, AppointmentRepository>();
+        services.AddScoped<Seeder>();
         
         services.AddHttpContextAccessor(); 
         

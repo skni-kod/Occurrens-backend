@@ -73,6 +73,8 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+app.ApplyPendingMigrations();
+
 app.MapControllers();
 
 app.Run();
