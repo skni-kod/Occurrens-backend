@@ -1,0 +1,16 @@
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/bin/Debug/net8.0/Infrastructure.deps.json
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/bin/Debug/net8.0/Infrastructure.dll
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/bin/Debug/net8.0/Infrastructure.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/bin/Debug/net8.0/Domain.dll
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/bin/Debug/net8.0/Domain.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.AssemblyReference.cache
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfoInputs.cache
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.AssemblyInfo.cs
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.csproj.CoreCompileInputs.cache
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.sourcelink.json
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastr.15EFFBFE.Up2Date
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.dll
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/refint/Infrastructure.dll
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/Infrastructure.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/Debug/net8.0/ref/Infrastructure.dll

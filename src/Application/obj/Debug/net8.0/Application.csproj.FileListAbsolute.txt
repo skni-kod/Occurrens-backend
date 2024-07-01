@@ -1,0 +1,16 @@
+/home/jcob/Pulpit/occurrens-backend/src/Application/bin/Debug/net8.0/Application.deps.json
+/home/jcob/Pulpit/occurrens-backend/src/Application/bin/Debug/net8.0/Application.dll
+/home/jcob/Pulpit/occurrens-backend/src/Application/bin/Debug/net8.0/Application.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Application/bin/Debug/net8.0/Domain.dll
+/home/jcob/Pulpit/occurrens-backend/src/Application/bin/Debug/net8.0/Domain.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.csproj.AssemblyReference.cache
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.AssemblyInfoInputs.cache
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.AssemblyInfo.cs
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.csproj.CoreCompileInputs.cache
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.sourcelink.json
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Applicat.44B5EDA2.Up2Date
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.dll
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/refint/Application.dll
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/Application.pdb
+/home/jcob/Pulpit/occurrens-backend/src/Application/obj/Debug/net8.0/ref/Application.dll
