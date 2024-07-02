@@ -1,4 +1,6 @@
-﻿services:
+﻿version: '3.9'
+
+services:
   api:
     image: ${DOCKER_REGISTRY-}occurrens
     build:
@@ -6,11 +8,11 @@
       dockerfile: Dockerfile
     ports:
       - 5000:80
-      - 5001:81
+      #- 5001:81
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
       - ASPNETCORE_HTTP_PORTS=5000
-      - ASPNETCORE_HTTPS_PORTS=5001
+      #- ASPNETCORE_HTTPS_PORTS=5001
       - ConnectionStrings__Default=Host=db;Port=5432;Database=miejscakultury;Username=postgres;Password=postgres
     volumes:
       - ${APPDATA}/Microsoft/UserSecrets:/home/app/.microsoft/usersecrets:ro
