@@ -15,7 +15,7 @@ public static class AddDatabase
     {
         services.AddDbContext<OccurrensDbContext>(opt => opt.UseNpgsql(
             configuration.GetConnectionString("Database"),
-            m => m.MigrationsAssembly(typeof(AssemblyReference).Assembly.ToString())));
+            m => m.MigrationsAssembly(typeof(OccurrensDbContext).Assembly.FullName)));
 
         services.AddHostedService<DatabaseSeeder>();
         
