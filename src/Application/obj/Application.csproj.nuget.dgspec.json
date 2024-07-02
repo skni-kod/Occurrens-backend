@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/home/jcob/Pulpit/occurrens-backend/src/Application/Application.csproj": {}
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Application\\Application.csproj": {}
   },
   "projects": {
-    "/home/jcob/Pulpit/occurrens-backend/src/Application/Application.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jcob/Pulpit/occurrens-backend/src/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/home/jcob/Pulpit/occurrens-backend/src/Application/Application.csproj",
-        "packagesPath": "/home/jcob/.nuget/packages/",
-        "outputPath": "/home/jcob/Pulpit/occurrens-backend/src/Application/obj/",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/jcob/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj": {
-                "projectPath": "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj"
+              "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -36,6 +42,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,26 +86,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/jcob/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj": {
+    "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj",
-        "packagesPath": "/home/jcob/.nuget/packages/",
-        "outputPath": "/home/jcob/Pulpit/occurrens-backend/src/Domain/obj/",
+        "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/home/jcob/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -107,6 +124,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -134,7 +156,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/jcob/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
