@@ -19,6 +19,7 @@ public sealed class SignUpHandler : IRequestHandler<SignUpCommand, SignUpRespons
         var user = new Domain.Entities.Account
         {
             Name = request.Name,
+            UserName = request.Email,
             SecondName = request.SecondName,
             Surname = request.Surname,
             Pesel = request.Pesel,
