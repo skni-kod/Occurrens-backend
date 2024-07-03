@@ -52,3 +52,5 @@ C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\obj\Debug\n
 C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\obj\Debug\net8.0\Infrastructure.genruntimeconfig.cache
 C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\bin\Debug\net8.0\Application.dll
+C:\Users\sebcw\Documents\GitHub\occurrens-backend\src\Infrastructure\bin\Debug\net8.0\Application.pdb

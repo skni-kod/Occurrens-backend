@@ -1476,6 +1476,7 @@
       },
       "Infrastructure/1.0.0": {
         "dependencies": {
+          "Application": "1.0.0",
           "Domain": "1.0.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
           "Microsoft.AspNetCore.Identity": "2.2.0",
