@@ -49,4 +49,17 @@ public class AccountService : IAccountService
         
         return user.Id;
     }
+
+    public async Task<Account> GetUserByIdAsync(Guid userId, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
+        if (user is null) throw new BadRequestException("User doesn't exist");
+
+        return user;
+    }
+
+    public async Task<string> GenerateEmailConfirmTokenAsync(Account user, CancellationToken cancellationToken)
+    {
+        return await _userManager.GenerateEmailConfirmationTokenAsync(user);
+    }
 }

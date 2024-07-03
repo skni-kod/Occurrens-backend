@@ -1,6 +1,9 @@
 ﻿using Application.Persistance.Interfaces.Account;
+using Application.Persistance.Interfaces.Email;
 using Domain.Entities;
 using Infrastructure.Persistance.Accounts.Services;
+using Infrastructure.Persistance.Email.Config;
+using Infrastructure.Persistance.Email.Services;
 using Infrastructure.Persistance.Extensions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
@@ -18,6 +21,7 @@ public static class DependencyInjection
         services.AddScoped<UserManager<Account>>();
 
         services.AddScoped<IAccountService, AccountService>();
+        services.AddScoped<IEmailService, EmailService>();
 
         services.Configure<IdentityOptions>(opt =>
         {
@@ -36,6 +40,10 @@ public static class DependencyInjection
 
         services.AddHttpContextAccessor();
         //services.AddValidatorsFromAssemblyContaining<SignInCommand>();
+
+        var smtpConfig = new SmtpConfig();
+        configuration.GetSection("SMTP").Bind(smtpConfig);
+        services.AddSingleton(smtpConfig);
             
         return services;
     }
