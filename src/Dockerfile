@@ -22,4 +22,10 @@ RUN dotnet publish "Api.csproj" -c $BUILD_CONFIGURATION -o /app/publish /p:UseAp
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
+
+RUN apt-get update && apt-get install -y openssl
+RUN openssl req -x509 -newkey rsa:4096 -keyout /app/key.pem -out /app/cert.pem -days 365 -nodes -subj '/CN=localhost'
+ENV ASPNETCORE_Kestrel__Certificates__Default__Path=/app/cert.pem
+ENV ASPNETCORE_Kestrel__Certificates__Default__KeyPath=/app/key.pem
+
 ENTRYPOINT ["dotnet", "Api.dll"]
