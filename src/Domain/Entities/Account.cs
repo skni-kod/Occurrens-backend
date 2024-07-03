@@ -9,7 +9,7 @@ public class Account : IdentityUser<Guid>
     public string Name { get; set; }
     public string? SecondName { get; set; }
     public string Surname { get; set; }
-    public long Pesel { get; set; }
+    public string Pesel { get; set; }
     public DateOnly BirthDate { get; set; }
 }
 
