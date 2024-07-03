@@ -2,10 +2,12 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Api.Controllers;
 
-[Route("test")]
-public class test : ControllerBase
+[ApiController]
+[Route("[controller]")]
+public class TestController : ControllerBase
 {
-    public async Task<IActionResult> Test()
+    [HttpGet]
+    public IActionResult Test()
     {
         return Ok("siema");
     }

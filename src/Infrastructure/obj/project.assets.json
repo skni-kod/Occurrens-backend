@@ -4729,32 +4729,39 @@
     ]
   },
   "packageFolders": {
-    "/home/jcob/.nuget/packages/": {}
+    "C:\\Users\\sebcw\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Infrastructure\\Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/Infrastructure.csproj",
-      "packagesPath": "/home/jcob/.nuget/packages/",
-      "outputPath": "/home/jcob/Pulpit/occurrens-backend/src/Infrastructure/obj/",
+      "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Infrastructure\\Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\sebcw\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/home/jcob/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\sebcw\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj": {
-              "projectPath": "/home/jcob/Pulpit/occurrens-backend/src/Domain/Domain.csproj"
+            "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\sebcw\\Documents\\GitHub\\occurrens-backend\\src\\Domain\\Domain.csproj"
             }
           }
         }
@@ -4816,7 +4823,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/home/jcob/.dotnet/sdk/8.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
