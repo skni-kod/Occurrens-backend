@@ -62,4 +62,15 @@ public class AccountService : IAccountService
     {
         return await _userManager.GenerateEmailConfirmationTokenAsync(user);
     }
+
+    public async Task ConfirmAccountAsync(Guid userId, string token, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
+
+        if (user is null) throw new BadRequestException("User doesn't exist!");
+
+        var result = await _userManager.ConfirmEmailAsync(user, token);
+
+        if (!result.Succeeded) throw new BadRequestException("Failed!");
+    }
 }

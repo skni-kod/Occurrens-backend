@@ -1,3 +1,4 @@
+using Application.Account.Commands.ConfirmAccount;
 using Application.Account.Commands.SignUp;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
@@ -16,6 +17,12 @@ public class AccountControlles : ControllerBase
         _mediator = mediator;
     }
 
+    /// <summary>
+    /// sign up
+    /// </summary>
+    /// <param name="command"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
     [HttpPost("sign-up")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -23,6 +30,23 @@ public class AccountControlles : ControllerBase
     {
         var response = await _mediator.Send(command, cancellationToken);
         
+        return Ok(response);
+    }
+
+    /// <summary>
+    /// confirm account
+    /// </summary>
+    /// <param name="command"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpPost("confirm-account")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    public async Task<IActionResult> ConfirmAccount([FromBody] ConfirmAccountCommand command,
+        CancellationToken cancellationToken)
+    {
+        var response = await _mediator.Send(command, cancellationToken);
+
         return Ok(response);
     }
 }
