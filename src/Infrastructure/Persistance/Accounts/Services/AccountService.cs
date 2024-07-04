@@ -88,4 +88,13 @@ public class AccountService : IAccountService
             Token = token
         };
     }
+
+    public async Task ResetPasswordAsync(string token, Guid userId, string password, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Id == userId, cancellationToken);
+        if (user is null) throw new BadRequestException("User doesn't exist!");
+
+        var result = await _userManager.ResetPasswordAsync(user, token, password);
+        if (!result.Succeeded) throw new CreateUserException(result.Errors);
+    }
 }

@@ -2,4 +2,4 @@ using MediatR;
 
 namespace Application.Email.Commands.SendConfirmAccountEmail;
 
-public record SendConfirmAccountEmailCommand(Guid UserId) : IRequest;
+public sealed record SendConfirmAccountEmailCommand(Guid UserId) : IRequest;

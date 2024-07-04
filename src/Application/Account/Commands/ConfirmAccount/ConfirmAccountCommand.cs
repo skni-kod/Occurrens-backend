@@ -3,7 +3,7 @@ using MediatR;
 
 namespace Application.Account.Commands.ConfirmAccount;
 
-public record ConfirmAccountCommand(
+public sealed record ConfirmAccountCommand(
     Guid UserId,
     string Token
     ) : IRequest<ConfirmAccountResponse>;

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Application.Account.Commands.ConfirmAccount;
 
-public class ConfirmAccountHandler : IRequestHandler<ConfirmAccountCommand, ConfirmAccountResponse>
+public sealed class ConfirmAccountHandler : IRequestHandler<ConfirmAccountCommand, ConfirmAccountResponse>
 {
     private readonly IAccountService _accountService;
     

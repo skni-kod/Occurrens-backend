@@ -10,4 +10,5 @@ public interface IAccountService
     Task<string> GenerateEmailConfirmTokenAsync(Domain.Entities.Account user, CancellationToken cancellationToken);
     Task ConfirmAccountAsync(Guid userId, string token, CancellationToken cancellationToken);
     Task<ResetPasswordDto> GenerateResetPasswordTokenAsync(string email, CancellationToken cancellationToken);
+    Task ResetPasswordAsync(string token, Guid userId, string password, CancellationToken cancellationToken);
 }

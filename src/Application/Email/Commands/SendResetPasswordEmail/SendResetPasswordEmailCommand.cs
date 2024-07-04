@@ -3,6 +3,6 @@ using MediatR;
 
 namespace Application.Email.Commands.SendResetPasswordEmail;
 
-public record SendResetPasswordEmailCommand(
+public sealed record SendResetPasswordEmailCommand(
     string Email
     ) : IRequest<SendResetPasswordEmailResponse>;

@@ -4,7 +4,7 @@ using MediatR;
 
 namespace Application.Email.Commands.SendConfirmAccountEmail;
 
-public class SendConfirmAccountEmailHandler : IRequestHandler<SendConfirmAccountEmailCommand>
+public sealed class SendConfirmAccountEmailHandler : IRequestHandler<SendConfirmAccountEmailCommand>
 {
     private readonly IEmailService _emailService;
     private readonly IAccountService _accountService;

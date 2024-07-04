@@ -5,7 +5,7 @@ using MediatR;
 
 namespace Application.Email.Commands.SendResetPasswordEmail;
 
-public class SendResetPasswordEmailHandler : IRequestHandler<SendResetPasswordEmailCommand, SendResetPasswordEmailResponse>
+public sealed class SendResetPasswordEmailHandler : IRequestHandler<SendResetPasswordEmailCommand, SendResetPasswordEmailResponse>
 {
     private readonly IAccountService _accountService;
     private readonly IEmailService _emailService;
