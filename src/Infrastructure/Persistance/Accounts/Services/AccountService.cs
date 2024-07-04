@@ -1,5 +1,6 @@
 using System.Security.Claims;
 using Application.Account.Enums;
+using Application.Email.Dtos;
 using Application.Persistance.Interfaces.Account;
 using Domain.Entities;
 using Domain.Exceptions;
@@ -72,5 +73,19 @@ public class AccountService : IAccountService
         var result = await _userManager.ConfirmEmailAsync(user, token);
 
         if (!result.Succeeded) throw new BadRequestException("Failed!");
+    }
+
+    public async Task<ResetPasswordDto> GenerateResetPasswordTokenAsync(string email, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users.FirstOrDefaultAsync(x => x.Email == email, cancellationToken);
+        if (user is null) throw new BadRequestException("User not found");
+
+        var token = await _userManager.GeneratePasswordResetTokenAsync(user);
+
+        return new ResetPasswordDto
+        {
+            UserId = user.Id,
+            Token = token
+        };
     }
 }
