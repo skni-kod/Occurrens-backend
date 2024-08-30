@@ -1,6 +1,8 @@
-﻿using Application.Persistance.Interfaces.Account;
+﻿using Application.Account.Commands.SignIn;
+using Application.Persistance.Interfaces.Account;
 using Application.Persistance.Interfaces.Email;
 using Domain.Entities;
+using FluentValidation;
 using Infrastructure.Persistance.Accounts.Services;
 using Infrastructure.Persistance.Email.Config;
 using Infrastructure.Persistance.Email.Services;
@@ -16,6 +18,7 @@ public static class DependencyInjection
     public static IServiceCollection AddInfrastructure(this IServiceCollection services, ConfigurationManager configuration)
     {
         services.DatabaseConfiguration(configuration);
+        services.AuthorizationSettings(configuration);
 
         services.AddScoped<SignInManager<Account>>();
         services.AddScoped<UserManager<Account>>();
@@ -39,11 +42,12 @@ public static class DependencyInjection
         });
 
         services.AddHttpContextAccessor();
-        //services.AddValidatorsFromAssemblyContaining<SignInCommand>();
+        services.AddValidatorsFromAssemblyContaining<SignInCommand>();
 
         var smtpConfig = new SmtpConfig();
         configuration.GetSection("SMTP").Bind(smtpConfig);
         services.AddSingleton(smtpConfig);
+        
             
         return services;
     }

@@ -1,3 +1,5 @@
+using System.Security.Claims;
+using Application.Account.Authentication;
 using Application.Account.Enums;
 using Application.Email.Dtos;
 
@@ -11,4 +13,6 @@ public interface IAccountService
     Task ConfirmAccountAsync(Guid userId, string token, CancellationToken cancellationToken);
     Task<ResetPasswordDto> GenerateResetPasswordTokenAsync(string email, CancellationToken cancellationToken);
     Task ResetPasswordAsync(string token, Guid userId, string password, CancellationToken cancellationToken);
+    Task<Domain.Entities.Account> GetUserByEmailAsync(string email, CancellationToken cancellationToken);
+    JsonWebToken GenerateJsonWebToken(Domain.Entities.Account account, ICollection<string> roles, ICollection<Claim> claims);
 }

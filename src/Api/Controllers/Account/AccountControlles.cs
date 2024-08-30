@@ -1,5 +1,7 @@
+using Application.Account.Authentication;
 using Application.Account.Commands.ConfirmAccount;
 using Application.Account.Commands.ResetPassword;
+using Application.Account.Commands.SignIn;
 using Application.Account.Commands.SignUp;
 using Application.Email.Commands.SendResetPasswordEmail;
 using MediatR;
@@ -79,6 +81,24 @@ public class AccountControlles : ControllerBase
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<IActionResult> ResetPassword([FromBody] ResetPasswordCommand command,
+        CancellationToken cancellationToken)
+    {
+        var response = await _mediator.Send(command, cancellationToken);
+
+        return Ok(response);
+    }
+
+    /// <summary>
+    /// Sign in
+    /// </summary>
+    /// <param name="command"></param>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpPost("sign-in")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status400BadRequest)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> SignIn([FromBody] SignInCommand command,
         CancellationToken cancellationToken)
     {
         var response = await _mediator.Send(command, cancellationToken);
