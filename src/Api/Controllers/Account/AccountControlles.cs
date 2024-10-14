@@ -1,7 +1,7 @@
-using Application.Account.Authentication;
 using Application.Account.Commands.ConfirmAccount;
 using Application.Account.Commands.ResetPassword;
 using Application.Account.Commands.SignIn;
+using Application.Account.Commands.SignOut;
 using Application.Account.Commands.SignUp;
 using Application.Email.Commands.SendResetPasswordEmail;
 using MediatR;
@@ -103,6 +103,31 @@ public class AccountControlles : ControllerBase
     {
         var response = await _mediator.Send(command, cancellationToken);
 
+        var cookie = new CookieOptions
+        {
+            HttpOnly = true,
+            Expires = response.RefreshToken.Expires
+        };
+        
+        Response.Cookies.Append("refresh-token", response.RefreshToken.Token, cookie);
+
         return Ok(response);
+    }
+
+    /// <summary>
+    /// Sign out
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpPost("sign-out")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> SignOut(CancellationToken cancellationToken)
+    {
+        var refreshToken = Request.Cookies["refresh-token"];
+
+        await _mediator.Send(new SignOutCommand(refreshToken), cancellationToken);
+
+        return Ok();
     }
 }

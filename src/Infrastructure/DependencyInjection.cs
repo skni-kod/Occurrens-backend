@@ -1,9 +1,11 @@
 ﻿using Application.Account.Commands.SignIn;
 using Application.Persistance.Interfaces.Account;
+using Application.Persistance.Interfaces.CurrentUser;
 using Application.Persistance.Interfaces.Email;
 using Domain.Entities;
 using FluentValidation;
 using Infrastructure.Persistance.Accounts.Services;
+using Infrastructure.Persistance.CurrentUserService.Services;
 using Infrastructure.Persistance.Email.Config;
 using Infrastructure.Persistance.Email.Services;
 using Infrastructure.Persistance.Extensions;
@@ -25,6 +27,7 @@ public static class DependencyInjection
 
         services.AddScoped<IAccountService, AccountService>();
         services.AddScoped<IEmailService, EmailService>();
+        services.AddScoped<ICurrentUserService, CurrentUserService>();
 
         services.Configure<IdentityOptions>(opt =>
         {

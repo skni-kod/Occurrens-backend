@@ -1,4 +1,4 @@
-using Application.Account.Authentication;
+using Domain.AuthTokens;
 using MediatR;
 
 namespace Application.Account.Commands.SignIn;

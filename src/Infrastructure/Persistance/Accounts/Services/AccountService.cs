@@ -1,11 +1,13 @@
 using System.Security.Claims;
 using System.IdentityModel.Tokens.Jwt;
+using System.Security.Cryptography;
 using System.Text;
-using Application.Account.Authentication;
 using Application.Account.Enums;
 using Application.Email.Dtos;
 using Application.Persistance.Interfaces.Account;
+using Application.Persistance.Interfaces.CurrentUser;
 using Domain.Authentication;
+using Domain.AuthTokens;
 using Domain.Entities;
 using Domain.Exceptions;
 using Domain.Roles;
@@ -21,12 +23,17 @@ public class AccountService : IAccountService
     private readonly OccurrensDbContext _context;
     private readonly UserManager<Account> _userManager;
     private readonly JwtSettings _jwtSettings;
+    private IAccountService _accountServiceImplementation;
+    private readonly SignInManager<Account> _signInManager;
+    private readonly ICurrentUserService _currentUserService;
 
-    public AccountService(OccurrensDbContext context, UserManager<Account> userManager, JwtSettings jwtSettings)
+    public AccountService(OccurrensDbContext context, UserManager<Account> userManager, JwtSettings jwtSettings, SignInManager<Account> signInManager, ICurrentUserService currentUserService)
     {
         _context = context;
         _userManager = userManager;
         _jwtSettings = jwtSettings;
+        _signInManager = signInManager;
+        _currentUserService = currentUserService;
     }
     
     public async Task<Guid> CreateUserAsync(Account user, string password, EnumRole role, CancellationToken cancellationToken)
@@ -115,6 +122,49 @@ public class AccountService : IAccountService
         return user;
     }
 
+    public async Task<JsonWebToken> SignIn(string email, string password, CancellationToken cancellationToken)
+    {
+        var user = await GetUserByEmailAsync(email, cancellationToken);
+
+        var result = await _signInManager.CheckPasswordSignInAsync(user, password, true);
+        if (!result.Succeeded) throw new BadRequestException("Wrong data!");
+
+        var userRoles = await _userManager.GetRolesAsync(user);
+        var userClaims = await _userManager.GetClaimsAsync(user);
+
+        var jwtToken = GenerateJsonWebToken(user, userRoles, userClaims);
+        var refreshToken = GenerateRefreshToken();
+
+        jwtToken.RefreshToken = refreshToken;
+        DeleteExpiresRefreshToken(user);
+        user.AddRefreshToken(refreshToken);
+
+        _context.Update(user);
+        await _context.SaveChangesAsync(cancellationToken);
+        
+        return jwtToken;
+    }
+
+    public async Task SignOut(string? refreshToken, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users.Include(x => x.RefreshTokens)
+                                                  .SingleOrDefaultAsync(x => x.Id == _currentUserService.UserId(), cancellationToken)
+                                                ?? throw new NotFoundException("Nie znaleziono użytkownika");
+        
+        var token = user.RefreshTokens.FirstOrDefault(x => x.Token == refreshToken);
+
+        if (token is null)
+        {
+            throw new NotFoundException("Nie znaleziono tokenu");
+        }
+        
+        user.DeleteRefreshToken(token);
+        _context.Update(token);
+        await _context.SaveChangesAsync(cancellationToken);
+
+        await _signInManager.SignOutAsync();
+    }
+
     public JsonWebToken GenerateJsonWebToken(Account account, ICollection<string> roles, ICollection<Claim> claims)
     {
         var now = System.DateTime.UtcNow;
@@ -174,5 +224,26 @@ public class AccountService : IAccountService
             SecondName = account.SecondName,
             Surname = account.Surname
         };
+    }
+
+    public RefreshToken GenerateRefreshToken()
+    {
+        return new RefreshToken
+        {
+            Token = Convert.ToBase64String(RandomNumberGenerator.GetBytes(64)),
+            Expires = DateTime.Now.AddDays(_jwtSettings.RefreshTokenExpire)
+        };
+    }
+
+    public void DeleteExpiresRefreshToken(Account user)
+    {
+        var expiredRefreshToken = user.RefreshTokens.Where(token => token.IsExpired).ToList();
+        foreach (var token in expiredRefreshToken)
+        {
+            if (token.IsExpired)
+            {
+                user.DeleteRefreshToken(token);
+            }
+        }
     }
 }

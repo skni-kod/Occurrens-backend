@@ -7,4 +7,5 @@ public class JwtSettings
     public int ExpiryMinutes { get; init; }
     public string Issuer { get; set; } = null!;
     public string Audience { get; set; } = null!;
+    public int RefreshTokenExpire { get; set; }
 }
