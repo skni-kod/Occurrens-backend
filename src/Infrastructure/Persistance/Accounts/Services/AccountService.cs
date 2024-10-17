@@ -166,6 +166,38 @@ public class AccountService : IAccountService
         await _signInManager.SignOutAsync();
     }
 
+    public async Task<JsonWebToken> RefreshToken(string? refreshToken, CancellationToken cancellationToken)
+    {
+        var user = await _userManager.Users
+                       .Include(x => x.RefreshTokens)
+                       .SingleOrDefaultAsync(x => x.RefreshTokens.Any(y => y.Token == refreshToken), cancellationToken)
+                   ?? throw new BadRequestException("Niepoprawny refresh token");
+        
+        var currentToken = user.RefreshTokens.Single(x => x.Token == refreshToken);
+
+        if (currentToken.IsExpired)
+        {
+            throw new BadRequestException("Niepoprawny refresh token");
+        }
+        
+        user.DeleteRefreshToken(currentToken);
+        
+        var userRoles = await _userManager.GetRolesAsync(user);
+        var userClaims = await _userManager.GetClaimsAsync(user);
+
+        var jwtToken = GenerateJsonWebToken(user, userRoles, userClaims);
+        var newRefreshToken = GenerateRefreshToken();
+
+        jwtToken.RefreshToken = newRefreshToken;
+        DeleteExpiresRefreshToken(user);
+        user.AddRefreshToken(newRefreshToken);
+
+        _context.Update(user);
+        await _context.SaveChangesAsync(cancellationToken);
+
+        return jwtToken;
+    }
+
     public JsonWebToken GenerateJsonWebToken(Account account, ICollection<string> roles, ICollection<Claim> claims)
     {
         var now = System.DateTime.UtcNow;

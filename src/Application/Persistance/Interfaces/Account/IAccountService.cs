@@ -16,6 +16,7 @@ public interface IAccountService
     Task<Domain.Entities.Account> GetUserByEmailAsync(string email, CancellationToken cancellationToken);
     Task<JsonWebToken> SignIn(string email, string password, CancellationToken cancellationToken);
     Task SignOut(string? refreshToken, CancellationToken cancellationToken);
+    Task<JsonWebToken> RefreshToken(string? refreshToken, CancellationToken cancellationToken);
     JsonWebToken GenerateJsonWebToken(Domain.Entities.Account account, ICollection<string> roles, ICollection<Claim> claims);
     RefreshToken GenerateRefreshToken();
     void DeleteExpiresRefreshToken(Domain.Entities.Account user);

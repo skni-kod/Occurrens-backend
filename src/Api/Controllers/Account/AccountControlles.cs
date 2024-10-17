@@ -1,4 +1,5 @@
 using Application.Account.Commands.ConfirmAccount;
+using Application.Account.Commands.RefreshToken;
 using Application.Account.Commands.ResetPassword;
 using Application.Account.Commands.SignIn;
 using Application.Account.Commands.SignOut;
@@ -131,5 +132,29 @@ public class AccountControlles : ControllerBase
         Response.Cookies.Delete("refresh-token");
 
         return Ok();
+    }
+
+    /// <summary>
+    /// Refresh token
+    /// </summary>
+    /// <param name="cancellationToken"></param>
+    /// <returns></returns>
+    [HttpPost("refresh-token")]
+    [ProducesResponseType(StatusCodes.Status200OK)]
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<IActionResult> RefreshToken(CancellationToken cancellationToken)
+    {
+        var refreshToken = Request.Cookies["refresh-token"];
+        var response = await _mediator.Send(new RefreshTokenCommand(refreshToken), cancellationToken);
+        
+        var cookie = new CookieOptions
+        {
+            HttpOnly = true,
+            Expires = response.RefreshToken.Expires
+        };
+        
+        Response.Cookies.Append("refresh-token", response.RefreshToken.Token, cookie);
+        
+        return Ok(response);
     }
 }
