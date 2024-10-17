@@ -15,6 +15,7 @@ using Infrastructure.Persistance.Accounts.Exceptions;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Org.BouncyCastle.Asn1.Ocsp;
 
 namespace Infrastructure.Persistance.Accounts.Services;
 
@@ -159,7 +160,7 @@ public class AccountService : IAccountService
         }
         
         user.DeleteRefreshToken(token);
-        _context.Update(token);
+        _context.Update(user);
         await _context.SaveChangesAsync(cancellationToken);
 
         await _signInManager.SignOutAsync();

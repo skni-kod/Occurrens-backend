@@ -127,6 +127,8 @@ public class AccountControlles : ControllerBase
         var refreshToken = Request.Cookies["refresh-token"];
 
         await _mediator.Send(new SignOutCommand(refreshToken), cancellationToken);
+        
+        Response.Cookies.Delete("refresh-token");
 
         return Ok();
     }
