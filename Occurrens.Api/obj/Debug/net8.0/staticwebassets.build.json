@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gpRQTFkqqvtLA1bSJucocBiyIy2CtnKYkzxDN2BoVIk=",
+  "Source": "Occurrens.Api",
+  "BasePath": "_content/Occurrens.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -1,0 +1,12 @@
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\bin\Debug\net8.0\Occurrens.Domain.deps.json
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\bin\Debug\net8.0\Occurrens.Domain.dll
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\bin\Debug\net8.0\Occurrens.Domain.pdb
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.csproj.AssemblyReference.cache
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.AssemblyInfoInputs.cache
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.AssemblyInfo.cs
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.csproj.CoreCompileInputs.cache
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.dll
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\refint\Occurrens.Domain.dll
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\Occurrens.Domain.pdb
+C:\Users\jakub\Desktop\OccurrensBackend\Occurrens.Domain\obj\Debug\net8.0\ref\Occurrens.Domain.dll
