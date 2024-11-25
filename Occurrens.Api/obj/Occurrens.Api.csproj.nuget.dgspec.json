@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj": {}
+    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj": {
+    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj",
+        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj",
         "projectName": "Occurrens.Api",
-        "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj",
-        "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Api\\obj\\",
+        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Api\\Occurrens.Api.csproj",
+        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Api\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -34,11 +33,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
-                "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj"
+              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
+                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj"
               },
-              "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj"
+              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj"
               }
             }
           }
@@ -80,6 +79,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -88,25 +105,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
+    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj",
         "projectName": "Occurrens.Application",
-        "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj",
-        "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\obj\\",
+        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj",
+        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -122,8 +138,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
-                "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj"
+              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj"
               }
             }
           }
@@ -171,30 +187,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
+    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj",
         "projectName": "Occurrens.Domain",
-        "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj",
-        "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\obj\\",
+        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj",
+        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -247,30 +276,43 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj": {
+    "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj",
         "projectName": "Occurrens.Infrastructure",
-        "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\jakub\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\Occurrens.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Jcob\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\jakub\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Jcob\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -286,11 +328,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
-                "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj"
+              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj": {
+                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Application\\Occurrens.Application.csproj"
               },
-              "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
-                "projectPath": "C:\\Users\\jakub\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj"
+              "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj": {
+                "projectPath": "C:\\Users\\Jcob\\Desktop\\occurrens-backend\\Occurrens.Domain\\Occurrens.Domain.csproj"
               }
             }
           }
@@ -344,12 +386,26 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.1, 8.0.1]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-preview.1.24101.2/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

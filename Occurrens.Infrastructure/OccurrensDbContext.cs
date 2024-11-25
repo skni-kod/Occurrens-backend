@@ -9,7 +9,7 @@ public class OccurrensDbContext : IdentityDbContext<Account, IdentityRole<Guid>,
 {
     public OccurrensDbContext(DbContextOptions<OccurrensDbContext> options) : base(options){}
 
-    public DbSet<Domain.Entities.DoctorWorkPlace> DoctorWorkPlaces { get; set; }
+    public DbSet<DoctorWorkPlace> DoctorWorkPlaces { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

@@ -26,12 +26,10 @@ public class AddDoctorWorkPlaceHandler : IRequestHandler<AddDoctorWorkPlaceComma
             BuildingNumber = request.BuildingNumber,
             ApartamentNumber = request.ApartamentNumber,
             PostalCode = request.PostalCode,
-            City = request.City,
-            CreateDate = DateTime.Now,
-            CreatedBy = userId,
-            LastUpdate = DateTime.Now,
-            LastUpdateBy = userId
+            City = request.City
         };
+        
+        doctorWorkPlace.SetBaseEntity(userId);
 
         var workPlaceId = await _doctorWorkPlaceService.AddDoctorWorkPlace(doctorWorkPlace, cancellationToken);
 

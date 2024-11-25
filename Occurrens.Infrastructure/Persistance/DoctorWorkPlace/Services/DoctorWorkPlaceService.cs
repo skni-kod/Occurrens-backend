@@ -41,8 +41,7 @@ public class DoctorWorkPlaceService : IDoctorWorkPlaceService
         workPlaceToUpdate.ApartamentNumber = updatedWorkPlace.ApartamentNumber;
         workPlaceToUpdate.PostalCode = updatedWorkPlace.PostalCode;
         workPlaceToUpdate.City = updatedWorkPlace.City;
-        workPlaceToUpdate.LastUpdate = updatedWorkPlace.LastUpdate;
-        workPlaceToUpdate.LastUpdateBy = updatedWorkPlace.LastUpdateBy;
+        workPlaceToUpdate.SetBaseEntity(doctorId);
 
         _context.DoctorWorkPlaces.Update(workPlaceToUpdate);
     }
