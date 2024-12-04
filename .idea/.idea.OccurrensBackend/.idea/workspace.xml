@@ -9,11 +9,65 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="94614b72-182a-4d7a-bfb4-b81c267364f7" name="Changes" comment="" />
+    <list default="true" id="94614b72-182a-4d7a-bfb4-b81c267364f7" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OccurrensBackend/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OccurrensBackend/.idea/projectSettingsUpdater.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.OccurrensBackend/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.OccurrensBackend/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Debug/net8.0/Occurrens.Api.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Occurrens.Api.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Occurrens.Api.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/Occurrens.Api.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/Occurrens.Api.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Api/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Api/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Debug/net8.0/Occurrens.Application.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Occurrens.Application.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Occurrens.Application.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/Occurrens.Application.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/Occurrens.Application.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Application/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Application/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Debug/net8.0/Occurrens.Domain.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Occurrens.Domain.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Occurrens.Domain.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/Occurrens.Domain.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/Occurrens.Domain.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Domain/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Domain/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.assets.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Debug/net8.0/Occurrens.Infrastructure.csproj.AssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Occurrens.Infrastructure.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Occurrens.Infrastructure.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Occurrens.Infrastructure.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/Occurrens.Infrastructure.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Occurrens.Infrastructure/obj/rider.project.restore.info" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -24,17 +78,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\Jcob\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\DecompilerCache",
+      "C:\\Users\\Jcob\\AppData\\Roaming\\JetBrains\\Rider2023.3\\resharper-host\\SourcesCache",
+      "C:\\Users\\Jcob\\AppData\\Local\\Symbols\\src"
+    ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected=".NET Launch Settings Profile.Occurrens.Api: IIS Express">
     <configuration name="Occurrens.Api: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/Occurrens.Api/Occurrens.Api.csproj" />
@@ -137,6 +200,7 @@
       <workItem from="1732018083046" duration="2378000" />
       <workItem from="1732030721346" duration="1951000" />
       <workItem from="1732046929065" duration="656000" />
+      <workItem from="1732475094049" duration="1721000" />
     </task>
     <servers />
   </component>
